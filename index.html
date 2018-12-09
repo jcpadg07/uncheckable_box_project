@@ -1,0 +1,51 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+     <link rel="stylesheet" href="form_project_style.css">
+     <title>My Radio Button Project</title>
+ </head>
+ <body>
+     <div class="form form-container">
+        <form autocomplete="off">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="user_name">
+            </div>
+            <div class="form-group">
+                <label for="mail">E-mail:</label>
+                <input type="email" id="mail" name="user_mail">
+            </div>
+            <div class="form-group">
+                <label for="msg">Message:</label>
+                <textarea id="msg" name="user_message"></textarea>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+                Default checkbox
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" disabled>
+                <label class="form-check-label" for="defaultCheck2">
+                Disabled checkbox
+                </label>
+            </div>
+            <div>
+                    <input type="checkbox" name="check" onclick="onlyOne(this)">
+                    <input type="checkbox" name="check" onclick="onlyOne(this)">
+                    <input type="checkbox" name="check" onclick="onlyOne(this)">
+                    <input type="checkbox" name="check" onclick="onlyOne(this)">
+            </div>
+        
+                <button onclick="inputTest(event)" type="submit" id="submit">Send your message</button>
+        
+        </form>
+    </div> 
+    <script src="radio_button.js"></script>
+ </body>
+ </html>       
